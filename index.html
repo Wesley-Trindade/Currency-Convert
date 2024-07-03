@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img class="logo" src="./assets/logo.gif" alt="logo convert money">
+
+    <main>
+        <label>
+            Converte <b>de</b>
+            <select class="currency__convert">
+                <option value="real"> R$ Real Brasileiro </option>
+                <option value="dolar"> US$ Dólar Americano </option>
+                <option value="euro"> € Euro</option>
+                <option value="libra"> £ Libra</option>
+                <option value="bitcoin"> ₿ Bitcoin</option>
+                <option value="franco"> € Franco Suíço</option>             
+            </select>
+
+        </label>
+
+        <label>
+            Converte <b>para</b>
+            <select class="currency__select">
+                <option value="dolar"> US$ Dólar Americano </option>
+                <option value="real"> R$ Real Brasileiro </option>
+                <option value="euro"> € Euro</option>
+                <option value="libra"> £ Libra</option>
+                <option value="bitcoin"> ₿ Bitcoin</option> 
+                <option value="franco"> € Franco Suíço</option>        
+            </select>
+
+        </label>
+
+        <label>
+            <b>valor</b> 
+            <input class="input__currency" placeholder="10.000,00">
+        </label>
+
+        <button class="convert__button">Converter</button>
+
+        <section>
+
+            <div class="currency__box">
+                <img class="img__currency" src="./assets/Real.png" alt="image moeda a Converter">
+                <p class="currencyname__convert"> Real</p>
+                <p class="currency__value__to__convert"> R$ 0,00</p>
+            </div>
+
+           <img class="arrow__img" src="./assets/Seta.png" alt="">
+
+
+            <div class="currency__box">
+                <img class="currency__img" src="./assets/Dolar.png" alt="image moeda convertida">
+                <p class="currency__name" > Dólar Americano</p>
+                <p class="currency__value">US$ 0,00</p>
+            </div> 
+
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>
